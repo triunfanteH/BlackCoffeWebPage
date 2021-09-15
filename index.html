@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>BlackCoffe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="imagem/jpg" href="img/logo.jpeg" />
+</head>
+<body>
+<div id="topOfTheWorld">
+    <a href="index.html"><img id="logo" src="img/logo.jpeg"></a>
+    <ul id="menu">
+        <li><a href="#">FLAVORS</a></li>
+        <li><a href="#">MACHINES</a></li>
+        <li><a href="#">SHOPS</a></li>
+        <li><a href="brand.html">THE BRAND</a></li>
+        <li><a href="#">DELIVERY</a></li>
+    </ul>
+</div>
+<br>
+<div id="content">
+    <div class="blocoDeConteudo">
+        <div id="primeiro" class="conteudoCentro">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <span>Do you need a coffe?</span>
+                </div>
+
+                <div class="mySlides fade">
+                    <span>Hot coffe?</span>
+                </div>
+
+                <div class="mySlides fade">
+                    <span>You need a <div style="text-decoration: underline;">Black Coffe!</div></span>
+                </div>
+
+            </div>
+            <br>
+        </div>
+        <div id="meioSegundo" class="conteudoCentro">
+            <h1 class="title">The best flavors</h1>
+            <p>Galão, percolator foam, affogato whipped extra affogato con panna, irish arabica cinnamon aromatic
+                pumpkin spice redeye iced. So froth decaffeinated, espresso dark mazagran doppio, arabica chicory
+                cinnamon white medium, affogato, arabica wings as, macchiato black siphon, steamed iced aged spoon
+                aroma. Blue mountain sugar cream skinny frappuccino variety single origin, acerbic single origin body,
+                half and half siphon, galão cream, plunger pot barista mazagran a instant sweet. Viennese, spoon as
+                cinnamon wings, and, coffee, that blue mountain frappuccino aged seasonal, id robusta sit single origin
+                bar , sit cream decaffeinated extraction caffeine java. Siphon, caramelization irish, cappuccino
+                frappuccino, as single origin brewed acerbic, plunger pot, qui ut spoon single shot froth sweet. Eu,
+                organic pumpkin spice, fair trade lungo java, americano aftertaste, at variety wings dark froth irish
+                seasonal id and foam wings percolator carajillo. Sweet coffee eu, cup, turkish fair trade robust half
+                and half, ristretto filter seasonal breve coffee medium ristretto extraction plunger pot kopi-luwak
+                sweet steamed spoon grounds. Latte cortado, ristretto chicory cream, so aged shop, breve, body brewed
+                siphon black dark.</p>
+            <p>Aromatic foam, mazagran, strong trifecta brewed strong grinder et, flavour, irish milk shop plunger pot,
+                cup foam extra , et grounds that et siphon irish. Affogato, decaffeinated, wings half and half, spoon
+                french press whipped café au lait, lungo sugar kopi-luwak qui beans flavour decaffeinated french press.
+                Americano aged, single origin fair trade affogato mazagran in saucer, black, qui, latte cappuccino,
+                wings, dark caramelization medium aged, single origin fair trade cortado breve and roast. Kopi-luwak
+                coffee aftertaste turkish cultivar est con panna, skinny a cortado carajillo and barista mocha blue
+                mountain espresso so milk. Black redeye irish blue mountain to go beans, galão americano, cup aroma,
+                extraction cinnamon at extraction strong. Dripper seasonal, foam, ristretto beans bar extraction barista
+                crema to go lungo doppio americano irish java steamed. Sugar crema, cortado lungo a, cream breve wings
+                sweet, mug con panna, siphon dark to go steamed, coffee, in foam single shot milk blue mountain bar.
+                Robusta iced extra iced plunger pot redeye, carajillo ut, seasonal kopi-luwak, percolator, beans,
+                aftertaste latte half and half sit cinnamon plunger pot black.</p>
+        </div>
+        <div id="segundo" class="conteudoCentro">
+            <img src="img/cafePreto.jpg">
+        </div>
+        <div id="terceiro" class="conteudoCentro">
+            <h2 class="title">Machines</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="img/maquinaUm.jpg" style="width:75%">
+                </div>
+                <div class="column">
+                    <img src="img/maquinaDois.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="img/maquinaTres.jpg" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div id="quarto" class="conteudoCentro">
+            <h3 id="news" class="title">Newsletter</h3>
+            <form id="newsF">
+                <input class="inputNews" type="text" placeholder="Nome..">
+                <input class="inputNews" type="mail" placeholder="thomas@edson.com.br">
+                <br><br>
+                <button id="btnNews">SEND</button>
+            </form>
+
+
+        </div>
+    </div>
+    <img class="imgFooter" src="img/footer.png">
+</div>
+<br>
+
+
+<script>
+
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 1500);
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+#topOfTheWorld {
+    border-bottom: 1px solid #d2d2d2;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 100px;
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#menu {
+    display: flex;
+    margin-left: 2%;
+    text-align: center;
+}
+
+#menu li {
+    margin-left: 15%;
+    position: relative;
+    display: contents;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #3c2d25;
+    margin-left: 35px;
+    font-size: 1rem;
+}
+
+#menu a:hover {
+    color: black;
+}
+
+
+#content {
+    border: 1px solid #d2d2d2;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.conteudoCentro {
+    height: auto;
+    width: 100%;
+}
+
+
+.conteudoCentro .slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.conteudoCentro .mySlides {
+    display: none;
+}
+
+.conteudoCentro .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #783c00;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.conteudoCentro .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.conteudoCentro .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.conteudoCentro .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudoCentro .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.conteudoCentro .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #51210a;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.conteudoCentro .active, .dot:hover {
+    background-color: #000000;
+}
+
+.conteudoCentro .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.conteudoCentro
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.conteudoCentro
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.dots {
+    position: relative;
+    margin-top: -4%;
+}
+
+.mySlides {
+    text-align: center;
+    padding-top: 22%;
+    font-size: 106px;
+    color: white;
+}
+
+#primeiro {
+    background-color: black;
+    height: 600px;
+}
+
+#segundo img {
+    width: 100%;
+}
+
+.title {
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#meioSegundo p {
+    text-align: justify;
+    margin: 5%;
+}
+
+
+.column {
+    float: left;
+    width: 28%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#terceiro {
+    margin-top: 25%;
+    text-align: center;
+    margin-left: 9%;
+    height: fit-content;
+}
+
+#terceiro h2 {
+    margin-left: -15%;
+    font-size: 45px;
+}
+
+.column:hover {
+    border: 1px solid;
+}
+
+
+#newsF {
+    text-align: center;
+    margin-right: -5%;
+    margin-bottom: 5%;
+}
+
+#quarto {
+    margin-top: 15%;
+}
+
+#news {
+    font-size: 3rem;
+}
+
+.inputNews {
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid;
+    margin-right: 5%;
+}
+
+
+#btnNews {
+    margin-left: -5%;
+    font-size: 1.2rem;
+    width: 10%;
+    background-color: #3c2d25;
+    color: white;
+    border: none;
+    min-height: 30px;
+    margin-top: 2%;
+}
+
+#btnNews:hover {
+    background-color: black;
+}
+
+.imgLoja {
+    margin-left: 25%;
+    width: 50%;
+    height: auto;
+    border: 9px double;
+}
